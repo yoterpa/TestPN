@@ -24,6 +24,7 @@
 		D318B0B423E5A388001E7B1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D318B0B723E5A388001E7B1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D318B0B923E5A388001E7B1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D318B0BF23E5A47C001E7B1A /* TestPN.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestPN.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		D318B0AA23E5A383001E7B1A /* TestPN */ = {
 			isa = PBXGroup;
 			children = (
+				D318B0BF23E5A47C001E7B1A /* TestPN.entitlements */,
 				D318B0AB23E5A383001E7B1A /* AppDelegate.swift */,
 				D318B0AD23E5A383001E7B1A /* SceneDelegate.swift */,
 				D318B0AF23E5A383001E7B1A /* ViewController.swift */,
@@ -284,15 +286,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L7N3SK5B6Q;
+				CODE_SIGN_ENTITLEMENTS = TestPN/TestPN.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GB2T6DS2C9;
 				INFOPLIST_FILE = TestPN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "in.anishchand.pn-test-alpha.TestPN";
+				PRODUCT_BUNDLE_IDENTIFIER = "in.anishchand.pn-test-alpha";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Test PN Dev Prov Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,15 +307,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L7N3SK5B6Q;
+				CODE_SIGN_ENTITLEMENTS = TestPN/TestPN.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = GB2T6DS2C9;
 				INFOPLIST_FILE = TestPN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "in.anishchand.pn-test-alpha.TestPN";
+				PRODUCT_BUNDLE_IDENTIFIER = "in.anishchand.pn-test-alpha";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Test PN Dev Prov Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
