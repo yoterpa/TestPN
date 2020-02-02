@@ -10,4 +10,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build
-      run: xcodebuild -scheme TestPN build
+      run: xcodebuild build -project TestPN.xcodeproj -scheme TestPN -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 11,OS=13.3"
